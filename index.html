@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Formularz</title>
+
+</head>
+
+<body>
+
+    <form action="thank.html" id="form-task" novalidate>
+
+        <header>
+            <h1>Witaj!</h1>
+            <p>Wypełnij formularz i zgarnij <span>kupon rabatowy</span> do wykorzystania przy najbliższych zakupach</p>
+        </header>
+       
+        <div class="input-container">
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="text" name="name" id="name" placeholder="imię">
+        </div>
+
+        <label class="checkbox-container">
+            <input type="checkbox" name="agree" id="agree">
+            <span class="checkmark"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ratione ipsam expedita
+                provident autem fugit cupiditate sint, rem perferendis dolore vitae temporibus? Dignissimos quia dolorum
+                harum laborum atque facilis adipisci, similique qui rerum perferendis eius.
+        </label>
+
+        <ul id="errors">
+        </ul>
+
+        <button type="submit" id="send">wyślij</button>
+
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

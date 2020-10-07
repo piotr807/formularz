@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+#thank-container {
+max-width: 600px;
+height: 600px;
+min-width: 280px;
+margin: 0 auto;
+padding: 10px;
+font-family: 'Open Sans', sans-serif;
+background-color: #80b0b4;
+color: #3a3a3a;
+text-align: center;
+text-transform: uppercase;
+}
+
+#thank-container h1 {
+    margin: 120px 0;
+}
+
+#thank-container span {
+    font-size: 1em;
+}
+
+#thank-container p {
+    font-size: 25px;
+}
+
+@media all and (max-width: 576px) {
+    #thank-container h1 {
+        font-size: 20px;
+        margin: 150px 0;
+    }
+
+    #thank-container p {
+        font-size: 15px;
+    }
+}

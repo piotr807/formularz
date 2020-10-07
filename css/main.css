@@ -1,0 +1,214 @@
+    *{
+        box-sizing: border-box;
+    }
+
+    form#form-task {
+    position: relative;
+    max-width: 600px;
+    height: 600px;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #80b0b4;
+    color: #3a3a3a;
+
+    }
+
+    form#form-task header {
+        text-align: center;
+        text-transform: uppercase;
+        color: #3a3a3a;
+        margin-bottom: 80px;
+    }
+
+    form#form-task header p {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    form#form-task header p span {
+        color: #185b61;
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    input {
+        display: inline-block;
+        font-size: 25px;
+        text-transform: uppercase;
+        color:#185b61;
+        background-color: #80b0b4;
+        border: none;
+        border-bottom: 3px #185b61 solid;
+        outline: none;
+        min-width: 0;
+        margin: 0 20px;
+    }
+
+    input#email {
+        flex-basis: 55%;
+    }
+
+    input#name {
+        flex-basis: 30%;
+    }
+
+    .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 0 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: justify;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color:#80b0b4;
+    border: 3px #185b61 solid;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: -2px;
+    width: 9px;
+    height: 21px;
+    border: solid #185b61;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+    
+    #form-task button {
+        position: absolute;
+        bottom: 20px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        background-color: #185b61;
+        color: #fff; 
+        text-transform: uppercase;
+        border: 0;
+        padding: 5px 35px;
+        cursor: pointer;
+        font-size: 25px;
+        text-transform: lowercase;
+    }
+    
+    #form-task button:hover {
+        background-color:#3a3a3a;
+    }
+
+     
+    #errors {
+        color: red;
+        list-style: none;
+        scroll-padding-left: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #185b61;
+        opacity: 1; /* Firefox */
+      }
+      
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #185b61;
+      }
+      
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color:#185b61;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover, 
+      input:-webkit-autofill:focus, 
+      input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px #80b0b4 inset;
+        -webkit-text-fill-color: #185b61; !important;
+      }
+
+      @media all and (max-width: 576px) {
+        form#form-task header h1 {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        form#form-task header p {
+            font-size: 15px;
+        }
+
+        input {
+            font-size: 15px;
+            border-bottom: 2px #185b61 solid;
+        }
+
+        input#email {
+            flex-basis: 100%;
+        }
+    
+        input#name {
+            flex-basis: 100%;
+        }
+
+        .checkbox-container {
+            font-size: 10px;
+        }
+
+        .checkmark {
+            height: 20px;
+            width: 20px;
+        }
+
+        .checkbox-container .checkmark:after {
+            left: 2px;
+            top: -1px;
+            width: 7px;
+            height: 12px;
+        }
+
+        #form-task button {
+            padding: 5px 25px;
+            font-size: 15px;
+        }
+        #errors {
+            font-size: 10px;
+        }
+    }
+    
